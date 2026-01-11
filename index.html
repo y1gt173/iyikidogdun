@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Doğum Günün Kutlu Olsun</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<link rel="icon" href="dogum.png" type="image/png">
+<body>
+  <!-- Şifre Ekranı -->
+  <div id="loginScreen" class="center">
+    <h1>🎁 Şifrenin Arkasında Bir Süpriz Gizli</h1>
+    <input type="password" id="passwordInput" placeholder="Şifreyi gir" />
+    <button id="loginBtn">Giriş Yap</button>
+    <p id="errorText"></p>
+  </div>
+
+  <!-- Asıl Site -->
+  <div id="mainSite" class="hidden">
+    <audio id="bgMusic" src="manifest.mp3" loop></audio>
+
+    <h1 class="title">🎉 Doğum Günün Kutlu Olsun Ablam 🎉</h1>
+    <h1 class="title">İyiki Varsın İyiki Doğdun</h1>
+
+    <!-- Konfeti Canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+    <div class="cake">
+      <div class="plate"></div>
+      <div class="layer layer1"></div>
+      <div class="layer layer2"></div>
+      <div class="layer layer3"></div>
+      <div class="candle">
+        <div class="flame"></div>
+      </div>
+    </div>
+
+    <button id="musicBtn">🎵 Şarkıyı Başlat</button>
+
+    <!-- MESAJLAR ARTIK HTML'DEN -->
+    <div class="messages" id="messagesBox">
+      <div class="message right">
+        <p>Yiğit :  10 ay önce ses odasında bir ablan olucak deselerdi inanmazdım iyiki tanımışım iyiki ablam olmuşsun  yeni yaşın mutluluk sağlık ve huzur getirsin en kötü günün mutluluktan ağlamak olsun iyiki doğdun iyiki varsın ablam 
+        </p>
+      </div>
+      <div class="message left">
+        <p> Elif : Mervoşummm kazasıyla belasıyla nerden baksan 1 yıldır tanışıyoruz ben ablam yok diye hep üzülürdüm taki seninle tanışana kadar gerçekten hayatıma etkini anlatmaya benim türkçem yetmez uzaktada olsak bana ablalık duygusunu sonuna kadar yaşattın bu yaşında hayat sana yeni kapılar açsın yüzün hep gülsün nice yaşların olsunnn
+        </p>
+      </div>
+
+     
+      <div class="message right">
+        <p> Merve Abla : Hiç görmeden sadece konusarak birine güveneceksin deseler inanmazdim taaki sizinle konuşunca ya kadar iyiki doğmuşsun ve iyiki tanışmışız sayende küçük bir kız kardeş edindim hep iyi sağlıklı ve mutlu ol seni seviyorum ❣️
+        </p>
+      </div>
+
+          <div class="message left">
+        <p>Alya : Ablaların bir tanesi, en güzeli en tatlısı doğmuş ve iyi ki de doğmuş yaa. Saatlerce ses odaları mı
+          dersin, motivasyon konuşmaları mı neler neler. İyi ki varsın, iyi ki doğdun ablam. İyi ki seni tanımışım,
+          tanımışız, iyi ki varsın, hep ol. Sağlıklı, umutlu, mutlu güzel yaşların olsun. Kalbin gibi temiz bir hayat
+          yaşa. Nice nice anılar biriktirelim beraber, gözyaşlarımız sadece mutluluktan aksın. Seni çok seviyorum,
+          seviyoruz🫂
+        </p>
+      </div>
+
+      <div class="message right">
+        <p>Cansu : İyi ki doğdun abloşuuum ✨ Bu toplulukta tanışıp sonra gerçek hayatta da yollarımızın kesişmesi benim
+          için çok kıymetli. Enerjin, kalbin ve varlığın hep iyi geliyor. Yeni yaşın sana sağlık, huzur ve bol bol güzel
+          anılar getirsin. Hayat hep yüzünü güldürsün, nice mutlu yaşlara 🎂💖 Seni çok seviyoruum
+        </p>
+      </div>
+
+      <div class="message left">
+        <p>Bahar : İyi ki diye başlarsam sonu gelmez ama toplu bi iyi ki. Öylesine açtığımız bi ses odasında nerden
+          bilebilirdim ki Türkiye'nin bi ucundan ablam olucağını. Şimdiye kadar her şeyde evin, ailenin büyüğü oldum ama
+          küçük kız kardeş deneyimini ilk kez senle yaşadım. Sorunlarımızla uğraştın bazen yorduk seni ama yine de
+          kıyamadın. O yüzden iyi ki o ses odasına gelmişsinde ablamız olmuşsun. İyi ki doğdun seni çookk seviyorum
+          ablalarınn gülüüüü.💗🫠
+        </p>
+      </div>
+
+      <div class="message right">
+        <p>Sude : Buraya geleli 1 yıl bile olmadı 8-9 ay oldu ama ben burda gerçekten öz ablam gibi hissettiğim ilk
+          kişisin iyki bu ses odalarına katılmışım iyki seni tanımışım bu hayatta karşına senin gibi güzel insanlar
+          çıksın, bu hayatta hep en kötü günüm dediğim günü bile kahkahalarla kapatmak nasip olsun seni seviyorum iykki
+          varsın doğum günün kutlu olsun 💗🎂
+        </p>
+      </div>
+
+      <div class="message left">
+        <p>Kenan : Seni tanıyalı 7 ay oldu bu 7 ay boyunca hergün iyi ki tanımışım dedim bu 7 ayda çok şey kattın bana
+          canım ablam iyi ki varsın iyi ki tanıdım seni doğum günün kutlu olsun akıl hastanesinin ablası annesi Merve
+          ablamız</p>
+      </div>
+
+      <div class="message right">
+        <p>Nur Abla: Canım Mervemmm ,
+          Hani derler ya bazı ruhlar birbirine aşinadır diye bende seni daha önce sevmiş yıllar sonra tekrar
+          karşılaşmışız gibi hissediyorum. Bu duyguyu bana hissettirdiğin için teşekkür ederim iyi ki varsın. Hayatın
+          sana güzellikler getirsin o güzel kalbin sadece mutluluktan hızlı atsın.Seni seviyorum, doğum günün kutlu
+          olsun💙
+        </p>
+      </div>
+
+      <div class="message left">
+        <p>Beyza : Oyyy benim pamuk kalpli güzel görüşlü merhametli abloşummm nerden başlayabilirim ki seninle hissettiğim her an özel o kadar değerli ki taa ses odalarından şimdi ise evin şımarık minik kızı gibi hissettiriyorusun🥹seni bilmek tanımak her anımızın biriciği sensiz bir biz düşünemiyorum iyikiii bizimlesin nice mutlu sağlıklı,huzurlu,kalbin gibi yaşların olsun gözyaşların sadece mutluluktan olsun seni çok seviyorummmzz hep bizimle kal bitanemizzz🫂</p>
+      </div>
+
+      <div class="message right">
+        <p>Eylül : Merve abla doğum günün kutlu olsun iyiki doğdun iyiki varsın nice sağlıklı, mutlu yıllara seni çok
+          seviyorum</p>
+      </div>
+          
+      <div class="message left">
+        <p>Dame : ablamm🌸🫠 iyi ki doğdun, iyi ki varsın, sadece sesini duyarak bile o güzel kalbini, samimiyetini hissetmiştik hepimiz, Allah sana kalbin kadar güzel bir hayat nasip etsin, çıktığın tüm yollar çiçek bahçesi olsun, karşına hep güzel insanlar çıksın, seni seviyorum</p>
+      </div>
+
+      <div class="message right">
+        <p>Sultan Abla : Canım ciğerim doğum günün kutlu olsun sevdiklerinle nice mutlu senelere ses odasının reisi iyi ki varsın iyi ki doğmussun ve iyi ki tanımışım seni çokkk seviyorum çittikim fittikimm NİCE BİZLİ YILLARIN OLSUN OWRİGHTTTTT</p>
+      </div>
+
+      <div class="message left">
+        <p></p>
+      </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  
+</body>
+
+</html>
