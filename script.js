@@ -1,5 +1,5 @@
 // Şifreyi buradan değiştirebilirsin
-const DOGRU_SIFRE = "11012026m";
+const DOGRU_SIFRE = "12012026m";
 
 const loginBtn = document.getElementById("loginBtn");
 const passwordInput = document.getElementById("passwordInput");
